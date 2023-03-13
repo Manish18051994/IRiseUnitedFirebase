@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "IRiseUnitedFirebase"
+    }
+  },
+  "defaultProject": "IRiseUnitedFirebase",
+  "cli": {
+    "analytics": "090061f2-d13e-44e8-8082-91d8eada2977"
+  }
 }
