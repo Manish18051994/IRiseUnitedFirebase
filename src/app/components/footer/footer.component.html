@@ -2,62 +2,62 @@
     <div class="container-xl">
         <div class="row">
             <div class="col-lg-4">
-            <div class="widget">
-                <h3>Contact</h3>
-                <address>
-                No.30, Crescent Road, <br>
-                Bengaluru,<br>
-                Karnataka 560 001</address>
-                <ul class="list-unstyled links">
-                <li><a href="tel://11234567890">+91 78295 54411</a></li>
-                <li>
-                    <a href="mailto:enquiries@assetzproperty.com">enquiries@assetzproperty.com</a>
-                </li>
-                </ul>
-            </div>
-            <!-- /.widget -->
-            </div>
-            <!-- /.col-lg-4 -->
-            <div class="col-lg-4">
-            <div class="widget">
-                <h3>Sources</h3>
-                <ul class="list-unstyled float-start links">
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Channel Partners</a></li>
-                <li><a href="#">Referral</a></li>
-                <li><a href="#">Download</a></li>
-                </ul>
-            </div>
-            <!-- /.widget -->
+                <div class="widget">
+                    <h3>Contact</h3>
+                    <address>
+                        No.30, Crescent Road, <br>
+                        Bengaluru,<br>
+                        Karnataka 560 001</address>
+                    <ul class="list-unstyled links">
+                        <li><a href="tel://11234567890">+91 78295 54411</a></li>
+                        <li>
+                            <a href="mailto:enquiries@assetzproperty.com">enquiries@assetzproperty.com</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.widget -->
             </div>
             <!-- /.col-lg-4 -->
             <div class="col-lg-4">
-            <div class="widget">
-                <h3>Links</h3>
+                <div class="widget">
+                    <h3>Sources</h3>
+                    <ul class="list-unstyled float-start links">
+                        <li><a [routerLink]="['/']">About us</a></li>
+                        <li><a [routerLink]="['/channelpartners']">Channel Partners</a></li>
+                        <li><a [routerLink]="['/refer']">Referral</a></li>
+                        <li><a [routerLink]="['/inquiry']">Download</a></li>
+                    </ul>
+                </div>
+                <!-- /.widget -->
+            </div>
+            <!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+                <div class="widget">
+                    <h3>Links</h3>
 
-                <ul class="list-unstyled social">
-                <li>
-                    <a href="#">
-                        <span class="bi bi-instagram"></span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <span class="bi bi-twitter"></span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <span class="bi bi-facebook"></span>
-                    </a>
-                </li>
-                </ul>
-            </div>
-            <!-- /.widget -->
+                    <ul class="list-unstyled social">
+                        <li>
+                            <a href="https://www.instagram.com/irise.united" target="_blank">
+                                <span class="bi bi-instagram"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/InfoIrise" target="_blank">
+                                <span class="bi bi-twitter"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="bi bi-facebook"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.widget -->
             </div>
             <!-- /.col-lg-4 -->
         </div>
-      <!-- /.row -->
+        <!-- /.row -->
 
         <div class="row mt-5">
             <div class="col-12 text-center">
@@ -72,7 +72,7 @@
 
 
 <div class="inquiry">
-    <button class="inquiry-button">
-        <img src="./assets/img/information.png" alt="">
-    </button>
+    <a class="inquiry-button btn" [routerLink]="['/inquiry']">
+        ENQUIRE NOW
+    </a>
 </div>
