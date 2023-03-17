@@ -1,12 +1,7 @@
 <div class="page-wrapper">
     <div class="slider-wrapper">
-        <ngb-carousel
-            #carousel
-            [interval]="4000"
-            [pauseOnHover]="pauseOnHover"
-            [pauseOnFocus]="pauseOnFocus"
-            (slide)="onSlide($event)"
-        >
+        <ngb-carousel #carousel [interval]="4000" [pauseOnHover]="pauseOnHover" [pauseOnFocus]="pauseOnFocus"
+            (slide)="onSlide($event)">
             <ng-template ngbSlide *ngFor="let img of images; index as i">
                 <a href="#" target="_blank" rel="nofollow noopener noreferrer">
                     <div class="picsum-img-wrapper">
@@ -24,17 +19,25 @@
                     <form>
                         <div class="inquiry-form">
                             <div class="form-heading">
-                                <h1 class="mb-2">Inquiry Details</h1>
-                                <p>Inquiry for the property enter below details.</p>
+                                <h1 class="mb-2">Place an Enquiry</h1>
+                                <!-- <p>Inquiry for the property enter below details.</p> -->
                             </div>
                             <div class="form-row">
                                 <div class="col-md-12 mb-3">
-                                    <input type="text" class="form-control" id="validationServer01" placeholder="Name" value="" required>
+                                    <input type="text" class="form-control" id="validationServer01" placeholder="Name*"
+                                        value="" required>
                                 </div>
                             </div>
                             <div class="form-row">
                                 <div class="col-md-12 mb-3">
-                                    <input type="text" class="form-control" id="validationServer04" placeholder="Phone Number *" required>
+                                    <input type="email" class="form-control" id="validationServer01"
+                                        placeholder="Email*" value="" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-md-12 mb-3">
+                                    <input type="text" class="form-control" id="validationServer04"
+                                        placeholder="Phone Number *" required>
                                 </div>
                             </div>
                             <button class="btn btn-dark" type="submit">Get OTP</button>
@@ -45,5 +48,5 @@
         </div>
     </section>
 
-    
+
 </div>
